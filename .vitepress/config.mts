@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import topNav from "./topNav";
 
 let base = "/blob_vitetest/";
 // https://vitepress.dev/reference/site-config
@@ -9,11 +10,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "关于", link: "/about" },
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
+    nav: topNav,
     search: {
       provider: "local",
     },

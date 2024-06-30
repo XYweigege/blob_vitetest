@@ -15,10 +15,13 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: ⚡️
+    title: vite 超快冷启动和热加载
+    details: Lorem ipsum...
+  - icon: 🖖
+    title: Vue的力量与Markdown相遇
+    details: Lorem ipsum...
+  - icon: 🛠️
+    title: 始终简单、最少
+    details: Lorem ipsum...
 ---
