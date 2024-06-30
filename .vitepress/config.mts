@@ -6,12 +6,7 @@ export default defineConfig({
   base: "/blob_vitetest/",
   title: "kevin's文档",
   description: "欢迎来访",
-  lang: "zh-Hans",
-  head: [
-    // 添加 favicon
-    ["link", { rel: "icon", href: "/assets/vitepress-logo-large.webp" }],
-    // 添加logo
-  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
