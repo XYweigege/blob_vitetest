@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/blob_vitetest/",
-  title: "kevin的博客",
+  title: "kevin's文档",
   description: "欢迎来访",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -11,6 +11,9 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
     ],
+    search: {
+      provider: "local",
+    },
 
     sidebar: [
       {
@@ -25,5 +28,9 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © kevin",
+    },
   },
 });
