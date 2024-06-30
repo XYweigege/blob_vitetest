@@ -6,6 +6,9 @@ hero:
   name: "kevin的博客"
   text: "欢迎来访"
   tagline: My great project tagline
+  image:
+    src: /assets/vitepress-logo-large.webp
+    alt: Kitty
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +25,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
