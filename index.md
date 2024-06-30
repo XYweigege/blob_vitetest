@@ -7,7 +7,7 @@ hero:
   text: "欢迎来访"
   tagline: My great project tagline
   image:
-    src: /assets/vitepress-logo-large.webp
+    src: ./assets/vitepress-logo-large.webp
     alt: Kitty
   actions:
     - theme: brand
