@@ -5,8 +5,7 @@
 /public/build/
 /compiled/
 /out/
-.vitepress
-
+ 
 # Node.js related
 /node_modules/
 
