@@ -1,6 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+lastUpdated: true
 
 hero:
   name: "kevin的博客"

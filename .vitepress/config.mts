@@ -14,6 +14,7 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    lastUpdatedText: "最后更新", // string
 
     sidebar: [
       {
