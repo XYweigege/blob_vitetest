@@ -1,0 +1,76 @@
+# .gitignore for Frontend Projects
+
+# Build files
+/dist/
+/public/build/
+/compiled/
+/out/
+.vitepress
+
+# Node.js related
+/node_modules/
+
+# Logs
+logs/
+*.log
+
+# Editor & IDEs
+.vscode/
+.project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.sublime-workspace
+ IDEs/
+
+# OS specific
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Editor & IDEs
+# Sublime Text
+.sublime-workspace
+# Visual Studio Code
+.vscode/*
+# except the settings.json and launch.json
+!.vscode/settings.json
+!.vscode/launch.json
+# Atom
+.atom/
+# WebStorm
+*.iml
+*.idea/
+*.ipr
+*.iws
+# IntelliJ
+*.iws
+*.iml
+*.ipr
+# Eclipse
+.project
+.classpath
+# NetBeans
+nbproject/private/
+# PyCharm
+*.pydevproject
+
+# Yarn
+.yarn-cache/
+
+# Prettier
+.prettierconfig
+
+# ESLint
+.eslintrc
+
+# TypeScript
+tsconfig.json
+
+# Jest
+jest.config.js
+
+# Storybook
+.storybook/
