@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import topNav from "./topNav";
-
+import sidebar from "./sidebar";
 let base = "/blob_vitetest/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -16,15 +16,7 @@ export default defineConfig({
     },
     lastUpdatedText: "最后更新", // string
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
+    sidebar,
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },

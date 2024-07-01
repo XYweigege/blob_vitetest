@@ -1,4 +1,7 @@
 export default [
+  { text: "首页", link: "/" },
+  { text: "前端", link: "/frontend/" },
+  { text: "后端", link: "/backend/" },
   {
     text: "前端网聚",
     items: [{ text: "前端综合", link: "/site/page" }],
