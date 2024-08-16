@@ -6,7 +6,14 @@ module.exports = {
       text: "前端",
       items: [
         { text: "介绍", link: "/frontend/" },
-        { text: "HTML", link: "/frontend/html" },
+        {
+          text: "HTML",
+          link: "/frontend/html",
+          items: [
+            { text: "基础", link: "/frontend/html/basics" },
+            { text: "进阶", link: "/frontend/html/advanced" },
+          ],
+        },
         { text: "CSS", link: "/frontend/css" },
         { text: "JavaScript", link: "/frontend/javascript" },
       ],

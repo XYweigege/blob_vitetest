@@ -1,6 +1,9 @@
 import { defineConfig } from "vitepress";
 import topNav from "./topNav";
-import sidebar from "./sidebar";
+// import sidebar from "./sidebar";
+//@ts-ignore
+import sidebarAuto from "../shell/sidebar-auto.js";
+
 let base = "/blob_vitetest/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -16,7 +19,10 @@ export default defineConfig({
     },
     lastUpdatedText: "最后更新", // string
 
-    sidebar,
+    //@ts-ignore
+    sidebar: {
+      "/frontend/": sidebarAuto,
+    },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },

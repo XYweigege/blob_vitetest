@@ -1,4 +1,4 @@
-#### 手写 Promise.All
+## 写 Promise.All
 
 ```js
 Promise.myAll = function (proms) {
@@ -31,3 +31,5 @@ Promise.myAll = function (proms) {
   return p;
 };
 ```
+
+## 手写 Promise.All2
