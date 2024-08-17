@@ -20,7 +20,7 @@ export default defineConfig({
     lastUpdatedText: "最后更新", // string
 
     //@ts-ignore
-    sidebar: sidebarAuto,
+    sidebar: sidebar,
     // {
     // "/frontend/": sidebarAuto,
     // },
