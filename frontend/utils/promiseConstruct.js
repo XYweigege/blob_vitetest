@@ -7,6 +7,7 @@ class MyPromise {
   //私有属性
   #state = PENDING;
   #result = undefined;
+  #handler = []; //多次then方法调用
   //
   constructor(executor) {
     const resolve = (data) => {
@@ -28,7 +29,42 @@ class MyPromise {
     }
     this.#state = state;
     this.#result = result;
-    console.log("state", this.#state);
+    this.#run();
+  }
+
+  #run() {
+    if (this.#state === PENDING) {
+      return;
+    }
+
+    while (this.#handler.length) {
+      const { onFulfilled, onRejected, resolve, reject } =
+        this.#handler.shift();
+      if (this.#state === FULFILLED) {
+        //当前状态已完成，并且promisethen传递了第一个参数是函数
+        if (typeof onFulfilled === "function") {
+          onFulfilled(this.#result);
+        }
+      } else {
+        if (typeof onRejected === "function") {
+          onRejected(this.#result);
+        }
+      }
+    }
+  }
+
+  //then方法 什么时候调用onFulfilled，什么时候调用onRejected
+  then(onFulfilled, onRejected) {
+    return new MyPromise((resolve, reject) => {
+      this.#handler.push({
+        onFulfilled,
+        onRejected,
+        resolve,
+        reject,
+      });
+      this.#run();
+      //
+    });
   }
 }
 
@@ -37,12 +73,29 @@ class MyPromise {
 //    resolve(1)
 // })
 const p = new MyPromise((res, rej) => {
-  res("123"); //promise 构造函数的回调执行，如果是异步抛错，捕获不到
+  setTimeout(() => {
+    rej("123"); //promise 构造函数的回调执行，如果是异步抛错，捕获不到
+  }, 1000);
 });
 console.log(p);
-
-new Promise((resolve, reject) => {
-  setTimeout(() => {
-    throw 123; //promise 构造函数的回调执行，如果是异步抛错，捕获不到
-  }, 0);
-});
+p.then(
+  (res) => {
+    console.log("res", res);
+  },
+  (rej) => {
+    console.log("rej", rej);
+  }
+);
+p.then(
+  (res) => {
+    console.log("res", res);
+  },
+  (rej) => {
+    console.log("rej", rej);
+  }
+);
+// new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     throw 123; //promise 构造函数的回调执行，如果是异步抛错，捕获不到
+//   }, 0);
+// });
