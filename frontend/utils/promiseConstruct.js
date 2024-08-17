@@ -1,8 +1,4 @@
-# 手写 Promise
-
-## 手写 promise 构造器
-
-```js
+// @ts-nocheck
 const PENDING = "pending";
 const FULFILLED = "fulfilled";
 const REJECTED = "rejected";
@@ -36,6 +32,10 @@ class MyPromise {
   }
 }
 
+//
+// new Promise((resolve, reject) => {
+//    resolve(1)
+// })
 const p = new MyPromise((res, rej) => {
   res("123"); //promise 构造函数的回调执行，如果是异步抛错，捕获不到
 });
@@ -46,42 +46,3 @@ new Promise((resolve, reject) => {
     throw 123; //promise 构造函数的回调执行，如果是异步抛错，捕获不到
   }, 0);
 });
-```
-
-## 手写 promise All
-
-```js
-Promise.myAll = function (proms) {
-  let res;
-  let rej;
-  const p = new Promise((resolve, reject) => {
-    res = resolve;
-    rej = reject;
-  });
-  let i = 0;
-  const result = [];
-  for (const prom of proms) {
-    const index = i;
-    i++;
-    Promise.resolve(prom).then((data) => {
-      //1.将完成的数据加入到最终结果
-      result[index] = data;
-
-      //2.判断是否全部完成
-      i--;
-      if (i === 0) {
-        //全部完成
-        res(result);
-      }
-    }, rej);
-  }
-  if (i === 0) {
-    res([]);
-  }
-  return p;
-};
-```
-
-```js
-
-```
