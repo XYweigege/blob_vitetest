@@ -181,4 +181,5 @@ p.then(
     console.log("rej", rej);
   }
 );
+1;
 ```
