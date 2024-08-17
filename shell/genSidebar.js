@@ -51,5 +51,5 @@ const sidebarConfig = generateSidebar(baseDir);
 // 将结果写入文件
 fs.writeFileSync(
   path.resolve(__dirname, "./sidebar-auto.js"),
-  `module.exports = ${JSON.stringify(sidebarConfig, null, 2)};`
+  `module.exports = {"/frontend/":${JSON.stringify(sidebarConfig, null, 2)}}`
 );

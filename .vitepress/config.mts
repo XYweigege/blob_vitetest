@@ -20,10 +20,11 @@ export default defineConfig({
     lastUpdatedText: "最后更新", // string
 
     //@ts-ignore
-    // sidebar: {
-    //   "/frontend/": sidebarAuto,
+    sidebar: sidebarAuto,
+    // {
+    // "/frontend/": sidebarAuto,
     // },
-    sidebar,
+    // sidebar,
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
