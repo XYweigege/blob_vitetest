@@ -25,6 +25,17 @@ module.exports = {
           ],
         },
         { text: "JavaScript", link: "/frontend/javascript" },
+        {
+          text: "React",
+          link: "/frontend/React/index",
+          items: [
+            { text: "基础", link: "/frontend/React/basics" },
+            { text: "进阶", link: "/frontend/React/advanced" },
+            { text: "手写", link: "/frontend/React/shouxie" },
+            { text: "原理", link: "/frontend/React/principle" },
+            { text: "面试篇", link: "/frontend/React/interview" },
+          ],
+        },
       ],
     },
   ],
@@ -36,6 +47,12 @@ module.exports = {
         { text: "Node.js", link: "/backend/nodejs" },
         { text: "数据库", link: "/backend/database" },
       ],
+    },
+  ],
+  "/algorythm/": [
+    {
+      text: "算法",
+      items: [{ text: "介绍", link: "/algorythm/index" }],
     },
   ],
 };
