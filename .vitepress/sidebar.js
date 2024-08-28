@@ -9,8 +9,8 @@ module.exports = {
         {
           text: "HTML",
           link: "/frontend/html",
-          collapsible: true,
-          collapsed: true,
+          // collapsible: true,
+          // collapsed: true,
           items: [
             { text: "基础", link: "/frontend/html/basics" },
             { text: "进阶", link: "/frontend/html/advanced" },
@@ -20,8 +20,7 @@ module.exports = {
         {
           text: "CSS",
           link: "/frontend/css/index",
-          collapsible: true,
-          collapsed: true,
+
           items: [
             { text: "基础", link: "/frontend/css/basics" },
             { text: "进阶", link: "/frontend/css/advanced" },
@@ -32,8 +31,7 @@ module.exports = {
         {
           text: "React",
           link: "/frontend/React/index",
-          collapsible: true,
-          collapsed: true,
+
           items: [
             { text: "基础", link: "/frontend/React/basics" },
             { text: "进阶", link: "/frontend/React/advanced" },
