@@ -9,8 +9,6 @@ module.exports = {
         {
           text: "HTML",
           link: "/frontend/html",
-          collapsible: true,
-          collapsed: true,
           items: [
             { text: "基础", link: "/frontend/html/basics" },
             { text: "进阶", link: "/frontend/html/advanced" },
