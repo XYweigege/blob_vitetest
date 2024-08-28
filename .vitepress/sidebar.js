@@ -20,7 +20,6 @@ module.exports = {
         {
           text: "CSS",
           link: "/frontend/css/index",
-
           items: [
             { text: "基础", link: "/frontend/css/basics" },
             { text: "进阶", link: "/frontend/css/advanced" },
