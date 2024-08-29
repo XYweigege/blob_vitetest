@@ -28,7 +28,6 @@ module.exports = {
         {
           text: "React",
           link: "/frontend/React/index",
-
           items: [
             { text: "基础", link: "/frontend/React/basics" },
             { text: "进阶", link: "/frontend/React/advanced" },
@@ -37,6 +36,11 @@ module.exports = {
             { text: "原理", link: "/frontend/React/principle" },
             { text: "面试篇", link: "/frontend/React/interview" },
           ],
+        },
+        {
+          text: "Seo",
+          link: "/frontend/seo/index",
+          items: [{ text: "基础", link: "/frontend/seo/basics" }],
         },
       ],
     },
