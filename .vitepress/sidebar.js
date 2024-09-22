@@ -24,7 +24,15 @@ module.exports = {
             { text: "手写", link: "/frontend/css/shouxie" },
           ],
         },
-        { text: "JavaScript", link: "/frontend/javascript" },
+        {
+          text: "JavaScript",
+          link: "/frontend/javascript/index",
+          items: [
+            { text: "基础", link: "/frontend/javascript/basics" },
+            { text: "进阶", link: "/frontend/javascript/advanced" },
+            { text: "手写", link: "/frontend/javascript/shouxie" },
+          ],
+        },
         {
           text: "React",
           link: "/frontend/React/index",
