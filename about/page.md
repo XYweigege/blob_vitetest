@@ -202,3 +202,17 @@
 :hatched_chick: 🐥
 :duck: 🦆
 :eagle: 🦅
+
+## git 可视化 learngitbranching
+
+https://learngitbranching.js.org/?locale=zh_CN
+
+## 算法
+
+https://www.programmercarl.com/
+
+https://labuladong.online/
+
+## 面试题
+
+https://interview.poetries.top/docs/base/high-frequency.html
