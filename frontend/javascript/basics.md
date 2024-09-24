@@ -16,7 +16,7 @@ function unique(arr) {
   let copy_arr = [...arr];
   for (let i = 0; i < copy_arr.length; i++) {
     for (let j = i + 1; j < copy_arr.length; j++) {
-      if (copy_arr[j] === copy_arr[i]) {
+      if (equals(copy_arr[j], copy_arr[i])) {
         copy_arr.splice(j, 1);
         j--;
       }
@@ -45,4 +45,6 @@ function equals(val1, val2) {
     return val1 === val2;
   }
 }
+
+console.log(unique(arr));
 ```
