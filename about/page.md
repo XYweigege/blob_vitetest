@@ -216,3 +216,14 @@ https://labuladong.online/
 ## 面试题
 
 https://interview.poetries.top/docs/base/high-frequency.html
+
+## react 大神博客
+
+https://www.developerway.com/posts/react-re-renders-guide#part1.1
+
+## React 源码解析英文版
+
+https://pomb.us/build-your-own-react/
+
+未使用 fiber 版本  https://claudiopro.github.io/react-fiber-vs-stack-demo/stack.html
+已使用 fiber 版本  https://claudiopro.github.io/react-fiber-vs-stack-demo/fiber.html
