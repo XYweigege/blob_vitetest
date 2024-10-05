@@ -13,8 +13,7 @@ export default [
   //   items: [{ text: "VitePress", link: "/note/vitePress" }],
   // },
   {
-    text: "关于我们",
+    text: "关于",
     link: "/about/page",
   },
-  { text: "更新日志", link: "" },
 ];
