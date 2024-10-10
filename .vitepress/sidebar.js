@@ -50,6 +50,11 @@ module.exports = {
           link: "/frontend/seo/index",
           items: [{ text: "基础", link: "/frontend/seo/basics" }],
         },
+        {
+          text: "Koa",
+          link: "/frontend/koa/index",
+          items: [{ text: "基础", link: "/frontend/koa/index" }],
+        },
       ],
     },
   ],
