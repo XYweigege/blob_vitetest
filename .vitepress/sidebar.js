@@ -38,6 +38,7 @@ module.exports = {
           link: "/frontend/React/index",
           items: [
             { text: "基础", link: "/frontend/React/basics" },
+            { text: "性能问题", link: "/frontend/React/performance" },
             { text: "进阶", link: "/frontend/React/advanced" },
             { text: "Hook", link: "/frontend/React/Hook" },
             { text: "手写", link: "/frontend/React/shouxie" },
