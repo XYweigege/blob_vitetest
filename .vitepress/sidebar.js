@@ -41,6 +41,8 @@ module.exports = {
             { text: "性能问题", link: "/frontend/React/performance" },
             { text: "进阶", link: "/frontend/React/advanced" },
             { text: "Hook", link: "/frontend/React/Hook" },
+            { text: "React_的代码分割与懒加载", link: "/frontend/React/lazy" },
+            { text: " 合理使用useEffect，避免副作用", link: "/frontend/React/useeffect" },
             { text: "手写", link: "/frontend/React/shouxie" },
             { text: "原理", link: "/frontend/React/principle" },
             { text: "面试篇", link: "/frontend/React/interview" },

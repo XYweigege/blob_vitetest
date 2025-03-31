@@ -17,8 +17,8 @@ hero:
 
 features:
   - icon: ⚡️
-    title: vite 超快冷启动和热加载
-    details: Lorem ipsum...
+    title: 输出知识
+    details: 学习路上的记载
   - icon: 🖖
     title: Vue的力量与Markdown相遇
     details: Lorem ipsum...
