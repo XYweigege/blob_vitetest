@@ -77,4 +77,14 @@ module.exports = {
       items: [{ text: "介绍", link: "/algorythm/index" }],
     },
   ],
+  "/project/":[
+    {
+      text: "前端难点",
+      items: [
+        { text: "介绍", link: "/project/frondend" },
+        { text: "中后台管理系统难点和亮点", link: "/project/frondend/bigFile" },
+        // 
+      ],
+    },
+  ]
 };

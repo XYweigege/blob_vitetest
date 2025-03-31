@@ -8,6 +8,10 @@ export default [
     text: "前端网聚",
     items: [{ text: "前端综合", link: "/site/page" }],
   },
+  {
+    text: "项目难点",
+    items: [{ text: "frondend项目难点", link: "/project/frondend" }],
+  },
   // {
   //   text: "技术笔记",
   //   items: [{ text: "VitePress", link: "/note/vitePress" }],
